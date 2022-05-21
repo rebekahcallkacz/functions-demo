@@ -13,6 +13,7 @@ function handleClick() {
 // Print out input
 function handleInput() {
     const inputRaw = d3.event.target.value;
+    // input of type text returns a string, but our function requires an integer
     const inputParsed = parseInt(inputRaw);
     const playerName = getPlayerNameByPlayerId(inputParsed);
     console.log(playerName);
